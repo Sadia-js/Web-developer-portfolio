@@ -32,7 +32,7 @@
     color: var(--primary-main-font);
     font-size: 20px;
     text-align: center;
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 /* header */
 .header{
@@ -46,6 +46,7 @@ nav{
     padding: 50px 200px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
 nav .nav-title{
@@ -58,6 +59,7 @@ nav .text-col{
 nav ul{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 nav ul li{
     list-style: none;
@@ -146,8 +148,12 @@ main section > h1{
 }
 .resume-content{
     margin: 113px 0;
+    padding: 10px 20px;
     display: flex;
     gap: 24px;
+}
+.resume-column{
+    padding: 10px 15px;
 }
 #resume .resume-title{
     margin-bottom: 30px;
