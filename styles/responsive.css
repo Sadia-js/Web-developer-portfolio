@@ -1,6 +1,4 @@
-.hide{
-    display: none;
-}
+/* mobile devices */
 @media screen and (max-width:576px) {
     nav, nav ul, 
     .banner,  
@@ -20,10 +18,10 @@
         background-image: none;
     }
    .banner{
-    margin: 10px;
+    margin: 5px;
    }
-   .banner-content{
-    width: calc(100% - 20px);
+   .banner .banner-content{
+    width: calc(100% - 10px);
    }
    .btn{
     margin-bottom: 20px;
@@ -46,4 +44,43 @@
    footer input, footer textarea{
     width: calc(100% - 40px);
    }
+}
+
+/* tablet specific media query */
+.hide{
+    display: none;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, .banner, .skills, footer{
+        flex-direction: column;
+    }
+    nav{
+        padding: 20px 10px;
+    }
+    .banner{
+        margin: 15px;
+     
+    }
+    .banner .banner-content{
+        width: 100%;
+    }
+    .banner-image{
+        width: 70%;
+    }
+    #about-section{
+        padding: 30px 20px;
+        width: calc(100% - 40px);
+    }
+    .skills{
+        margin: 15px;
+    }   
+    #resume{
+        width: 100%;
+    }
+    footer{
+        padding: 20px;
+    }
+    .foot-column{
+        width: calc(100% - 40px);
+    }
 }
